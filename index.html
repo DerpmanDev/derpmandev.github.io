@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home | Derpman's website</title>
+<link rel="icon" type="image/x-icon" href="pfp.png">
+<link rel="stylesheet" href="index.css">
+  <script>
+    function toggleProjects() {
+      var projectsSection = document.querySelector('.projects');
+      projectsSection.classList.toggle('show');
+    }
+alert("This website is still under construction.");
+  </script>
+</head>
+<body>
+  <div class="container">
+    <img class="profile-image" src="pfp.png" alt="Profile Picture">
+    <h1>Welcome to the home of Derpman!</h1>
+    <p id="offerText">I'm mostly a web developer. You may know me as the creator of Doge Unblocker. Click on "projects" to view my work.</p>
+    <div class="links">
+      <a class="link" href="#">Github</a>
+      <a class="link" href="#" onclick="toggleProjects()">Projects</a>
+      <a class="link" href="#">Contact</a>
+    </div>
+    
+    <div class="projects" id="projectsSection">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/dogenetwork/doge-unblocker">Doge Unblocker</a>
+        </li>
+        <li>
+          <a href="/tic-tac-toe">TicTacToe Remake</a>
+        </li>
+        <li>
+          <a href="#">Project 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
