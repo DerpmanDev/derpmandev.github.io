@@ -3,7 +3,8 @@
 <head>
   <title>Home | Derpman's website</title>
 <link rel="icon" type="image/x-icon" href="pfp.png">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/movement.css">
   <script>
     function toggleProjects() {
       var projectsSection = document.querySelector('.projects');
@@ -14,7 +15,7 @@
 <body>
   <div class="container">
     <img class="profile-image" src="pfp.png" alt="Profile Picture">
-    <h1>Welcome to the home of Derpman!</h1>
+    <h1 data-m="bounce-up">Welcome to the home of Derpman!</h1>
     <p id="offerText">I'm mostly a web developer. You may know me as the creator of Doge Unblocker. Click on "projects" to view my work.</p>
     <div class="links">
       <a class="link" href="https://github.com/derpmandev">Github</a>
@@ -22,14 +23,11 @@
       <a class="link" href="#">Contact</a>
     </div>
     
-    <div class="projects" id="projectsSection">
+    <div class="projects" id="projectsSection" data-m="bounce-up">
       <h2>Projects</h2>
       <ul>
         <li>
           <a href="https://github.com/dogenetwork/doge-unblocker">Doge Unblocker</a>
-        </li>
-        <li>
-          <a href="/tic-tac-toe">TicTacToe Remake</a>
         </li>
         <li>
           <a href="/unblocked-games">Unblocked Games</a>
